@@ -4,10 +4,9 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const router = express.Router();
-const userSchema = require("../models/User");
-const authorize = require("../middlewares/auth");
+const userSchema = require("/app/models/User");
+const authorize = require("/app/middlewares/auth");
 const { check, validationResult } = require('express-validator');
-
 
 // Sign-up
 router.post("/register-user",
