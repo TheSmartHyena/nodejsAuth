@@ -2,10 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const dbConfig = require('/app/database/db');
+const dbConfig = require('./database/db');
 
 // Express APIs
-const api = require('/app/routes/auth.routes');
+const api = require('./routes/auth.routes');
 
 // MongoDB conection
 mongoose.Promise = global.Promise;
